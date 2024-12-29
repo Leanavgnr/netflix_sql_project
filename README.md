@@ -125,7 +125,7 @@ LIMIT 1;
 Objective: Find the movie with the longest duration.
 
 
-## 6. Find content added in the last 5 years
+### 6. Find content added in the last 5 years
 
 ```sql
 SELECT *
@@ -158,7 +158,7 @@ WHERE
 Objective: Identify TV shows with more than 5 seasons.
 
 	
-## 9. count the number of content items in each genre
+### 9. count the number of content items in each genre
 
 ```sql
 SELECT
