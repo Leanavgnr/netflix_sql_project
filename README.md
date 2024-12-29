@@ -172,18 +172,18 @@ ORDER BY count_content DESC;
 Objective: Count the number of content items in each genre.
 
 
-### 10. Find each year and the average numbers of content release in India on netflix.
+### 10. Find the count and pourcentage of total content released per year in France on netflix.
 
 ```sql
 SELECT 
 	EXTRACT (YEAR from TO_date (date_added,'Month DD, YYYY')) as year_added,
 	count (show_id ) as count_shows,
 	ROUND (
-	(count(*)::numeric /(SELECT  count(*) from netflix where country = 'India')::numeric)* 100
-	,2) as average_content
+	count(*)::numeric /(SELECT  count(*) from netflix where country ILIKE '%france%')::numeric* 100
+	, 2) as average_content
 FROM netflix
 WHERE 
-	country ILIKE '%India%'
+	country ILIKE '%france%'
 GROUP BY year_added
 ORDER BY average_content DESC;
 ```
@@ -226,7 +226,7 @@ WHERE
 Objective: Count the number of movies featuring 'Salman Khan' in the last 10 years.
 
 
-### 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
+### 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in France
 
 ```sql
 SELECT
@@ -234,7 +234,7 @@ SELECT
 	COUNT (show_id) as count_content
 FROM netflix
 WHERE 
-	country ILIKE '%India%'
+	country ILIKE '%France%'
 GROUP BY actors
 ORDER BY count_content DESC
 LIMIT 10;
@@ -264,13 +264,15 @@ Objective: Categorize content as 'Violent content' if it contains 'kill' or 'vio
 
 ## Findings and Conclusion
 
-Content Distribution: The dataset contains a diverse range of movies and TV shows with varying ratings and genres.
-Common Ratings: Insights into the most common ratings provide an understanding of the content's target audience.
-Geographical Insights: The top countries and the average content releases by India highlight regional content distribution.
-Content Categorization: Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
-This analysis provides a comprehensive view of Netflix's content and can help inform content strategy and decision-making.
+### Content Distribution Strategy:
+Netflix offers a diverse catalog with a greater focus on movies (6,131) over TV shows (2,676). This trend highlights Netflix’s strength in movie content, but the growing number of TV shows indicates a shift towards series to enhance user retention. Geographically, the United States leads in content production (3,689), with India (1,046) and United Kingdom (804) following, showing Netflix’s strategy to target international markets, especially in Asia and Europe.
 
+### Target Audience:
+The most common rating is "TV-MA," indicating Netflix’s focus on adult audiences. However, Netflix also offers substantial family-friendly content, such as Children & Family Movies and Kids' TV, showcasing a balanced approach to cater to diverse age groups.
 
+### Content Categorization:
+Netflix offers content across various genres like International Movies (2,752) and International TV Shows (1,351), emphasizing its global reach. Dramas and Comedies remain dominant, but genres like Romantic Movies and Documentaries allow Netflix to cater to specific viewer preferences. This broad categorization enhances Netflix’s ability to offer something for everyone. Netflix offers both violent (342) and non-violent content (8,465), indicating a balanced approach to appeal to different audience preferences, including both crime thrillers and family-friendly content.
 
-
+### Recent Content Trends:
+The years 2020 (97 new titles), 2019 (79), and 2018 (64) show Netflix's accelerated content production, especially with the pandemic driving increased demand for entertainment. In contrast, content additions slowed in 2015 and 2011, reflecting the earlier phases of Netflix’s global expansion.
 
