@@ -264,15 +264,15 @@ Objective: Categorize content as 'Violent content' if it contains 'kill' or 'vio
 
 ## Findings and Conclusion
 
-### Content Distribution Strategy:
+#### Content Distribution Strategy:
 Netflix offers a diverse catalog with a greater focus on movies (6,131) over TV shows (2,676). This trend highlights Netflix’s strength in movie content, but the growing number of TV shows indicates a shift towards series to enhance user retention. Geographically, the United States leads in content production (3,689), with India (1,046) and United Kingdom (804) following, showing Netflix’s strategy to target international markets, especially in Asia and Europe.
 
-### Target Audience:
+#### Target Audience:
 The most common rating is "TV-MA," indicating Netflix’s focus on adult audiences. However, Netflix also offers substantial family-friendly content, such as Children & Family Movies and Kids' TV, showcasing a balanced approach to cater to diverse age groups.
 
-### Content Categorization:
+#### Content Categorization:
 Netflix offers content across various genres like International Movies (2,752) and International TV Shows (1,351), emphasizing its global reach. Dramas and Comedies remain dominant, but genres like Romantic Movies and Documentaries allow Netflix to cater to specific viewer preferences. This broad categorization enhances Netflix’s ability to offer something for everyone. Netflix offers both violent (342) and non-violent content (8,465), indicating a balanced approach to appeal to different audience preferences, including both crime thrillers and family-friendly content.
 
-### Recent Content Trends:
+#### Recent Content Trends:
 The years 2020 (97 new titles), 2019 (79), and 2018 (64) show Netflix's accelerated content production, especially with the pandemic driving increased demand for entertainment. In contrast, content additions slowed in 2015 and 2011, reflecting the earlier phases of Netflix’s global expansion.
 
