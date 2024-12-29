@@ -158,7 +158,7 @@ WHERE
 Objective: Identify TV shows with more than 5 seasons.
 
 	
-## 9. count the number of content items to each genre
+## 9. count the number of content items in each genre
 
 ```sql
 SELECT
@@ -172,8 +172,7 @@ ORDER BY count_content DESC;
 Objective: Count the number of content items in each genre.
 
 
-### 10.find each year and the average numbers of content release by india on netflix. 
-Return the top 5 years with highest avg content release
+### 10. Find each year and the average numbers of content release in India on netflix.
 
 ```sql
 SELECT 
@@ -227,7 +226,7 @@ WHERE
 Objective: Count the number of movies featuring 'Salman Khan' in the last 10 years.
 
 
-### 14. find the top 10 actors who have appeared in the highest number of movies produced in India
+### 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
 
 ```sql
 SELECT
@@ -243,9 +242,7 @@ LIMIT 10;
 Objective: Identify the top 10 actors with the most appearances in Indian-produced movies.
 
 
-### 15. categorize the content based on presence of the key word 'kill and 'violence' in the description field.
-Label content containing these key words as 'violent content' and all other contente as 'non violent content'.
-Count how many items fall into each category.
+### 15. Categorize Content Based on the Presence of 'Kill' and 'Violence' Keywords.
 
 ```sql
 SELECT 
@@ -263,7 +260,7 @@ FROM
 GROUP BY sensitive_category;
 ```
 
-Objective: Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
+Objective: Categorize content as 'Violent content' if it contains 'kill' or 'violence' and 'Non violent' otherwise. Count the number of items in each category.
 
 ## Findings and Conclusion
 
